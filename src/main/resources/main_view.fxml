@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="561.0" prefWidth="639.0" style="-fx-background-color: #7094E6;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.gestor.controladores.ContactoControlador">
+    <GridPane alignment="center" hgap="10" layoutX="14.0" layoutY="14.0" vgap="10">
+        <columnConstraints>
+        <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+        <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+
+    <HBox alignment="center" layoutX="14.0" layoutY="200.0" spacing="10" />
+
+    <TableView fx:id="tablaContactos" layoutX="107.0" layoutY="260.0" prefHeight="259.0" prefWidth="461.0" style="-fx-border-color: #709CE6;">
+        <columns>
+            <TableColumn fx:id="nombreColumna" text="Nombre" />
+            <TableColumn fx:id="telefonoColumna" text="Teléfono" />
+             <TableColumn fx:id="cumpleanosColumna" text="Cumpleaños" />
+             <TableColumn fx:id="correoColumna" text="Correo" />
+        </columns>
+    </TableView>
+     <Button layoutX="316.0" layoutY="39.0" onAction="#agregarContacto" style="-fx-background-color: #1364EB; -fx-font-style: BOLD;" text="Agregar Contacto" textFill="WHITE" />
+     <Button layoutX="320.0" layoutY="118.0" onAction="#buscarContacto" style="-fx-background-color: #1364EB;" text="Buscar Contacto" textFill="WHITE" />
+     <Button layoutX="316.0" layoutY="204.0" onAction="#eliminarContacto" style="-fx-background-color: #EB0E08;" text="Eliminar Contacto" textFill="WHITE" />
+     <Button layoutX="322.0" layoutY="75.0" onAction="#editarContacto" style="-fx-background-color: #1364EB;" text="Editar Contacto" textFill="WHITE" />
+     <TextField fx:id="txtCumpleanos" layoutX="110.0" layoutY="171.0" />
+     <TextField fx:id="txtTelefono" layoutX="110.0" layoutY="126.0" />
+     <TextField fx:id="txtApellido" layoutX="110.0" layoutY="83.0" />
+    <TextField fx:id="txtNombre" layoutX="110.0" layoutY="39.0" />
+    <TextField fx:id="txtCorreo" layoutX="110.0" layoutY="217.0" />
+     <Label layoutX="33.0" layoutY="175.0" text="Cumpleaños:" textFill="WHITE" />
+     <Label layoutX="32.0" layoutY="130.0" text="Teléfono:" textFill="WHITE" />
+     <Label layoutX="33.0" layoutY="87.0" text="Apellido:" textFill="WHITE" />
+     <Label layoutX="33.0" layoutY="43.0" text="Nombre:" textFill="WHITE" />
+   <Label layoutX="6.0" layoutY="221.0" text="Correo Electronico:" textFill="WHITE" />
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="433.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+</AnchorPane>
